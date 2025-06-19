@@ -126,6 +126,9 @@ ol {
   border-bottom: 1px solid #fff;
   padding: 0;
   color: #fff;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
   background-color: transparent;
   appearance: none;
 }
@@ -180,7 +183,7 @@ ol {
 }
 
 .button {
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
@@ -243,7 +246,7 @@ ol {
 .content__list-container {
   position: relative;
   height: 298px;
-  overflow-x: hidden;
+  padding: 0 3px;
   overflow-y: scroll;
 }
 
@@ -254,16 +257,15 @@ ol {
 }
 
 .content__list-item {
-  padding: 0 3px;
   border-radius: 0;
 }
 
 .content__card-link {
   display: block;
+  border-radius: 0;
   color: #fff;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 0;
 }
 
 .content__card-link:hover {
@@ -276,8 +278,8 @@ ol {
 }
 
 .content__card-link:focus-visible {
-  outline: 1px solid #fff;
   border-radius: 0;
+  outline: 1px solid #fff;
 }
 
 .content__card-link:active {
@@ -293,7 +295,6 @@ ol {
 .content__video-card {
   display: flex;
   width: 100%;
-  overflow: hidden;
 }
 
 .content__video-card-title {
@@ -312,6 +313,7 @@ ol {
 
 .content__video-card-description {
   display: -webkit-box;
+  margin-left: 1px;
   overflow: hidden;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
@@ -320,7 +322,6 @@ ol {
   -webkit-box-orient: vertical;
   line-clamp: 4;
   -webkit-line-clamp: 4;
-  margin-left: 1px;
 }
 
 .content__video-card-thumbnail {
